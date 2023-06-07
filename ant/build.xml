@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="demo_project" default="build_project" basedir=".">
+    <description>sampleproject build</description>
+
+    <property name="jar.dir"       value="../target"/>
+    <property name="webapp.dir"       value="C:/developer/dev_tools/build/demo"/>
+
+    <!-- 1. Clean classes directory -->
+<!--    <target name="clean">-->
+<!--        <delete file="${webapp.dir}" />-->
+<!--    </target>-->
+
+    <!-- 3. Copy Properties -->
+    <target name="copy_prop">
+        <copy todir="${webapp.dir}" overwrite="true" >
+            <fileset dir="${jar.dir}">
+                <include name="*.jar" />
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="build_project" depends="copy_prop" />
+</project>
