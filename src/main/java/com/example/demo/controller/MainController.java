@@ -11,6 +11,6 @@ public class MainController {
     @GetMapping(value = "/")
     public String main() {
         log.info("## Log : 메인 API 로드");
-        return "Hello! Java";
+        return "SQMS! 빌드 테스트";
     }
 }
