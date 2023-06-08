@@ -3,7 +3,7 @@
     <description>sampleproject build</description>
 
     <property name="jar.dir"       value="../target"/>
-    <property name="webapp.dir"       value="C:/developer/dev_tools/build/demo"/>
+    <property name="webapp.dir"    value="/home/jenkins/apps"/>
 
     <!-- 1. Clean classes directory -->
 <!--    <target name="clean">-->
