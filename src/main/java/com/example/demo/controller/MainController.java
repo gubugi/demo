@@ -10,7 +10,7 @@ public class MainController {
 
     @GetMapping(value = "/")
     public String main() {
-        // 주석 추가ㅇㅇㅇ
+        // 주석 추가 ㅇㅇㅇ
         log.info("## Log : 메인 API 로드");
         return "SQMS! 빌드 테스트";
     }
